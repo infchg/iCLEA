@@ -8,6 +8,8 @@
 #include <netdb.h> 
 
 // ------------------------------------------------------------
+// 
+// 
 void error(const char *msg)
 {
     perror(msg);
@@ -15,6 +17,8 @@ void error(const char *msg)
 }
 
 // ------------------------------------------------------------
+//          GET a Beluga code from infchg.appspot.com
+// 
 int main(int argc, char *argv[])
 {
     int sockfd, portn, n;
