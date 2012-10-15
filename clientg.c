@@ -18,7 +18,7 @@ void error(const char *msg)
 
 // ------------------------------------------------------------
 //          GET a Beluga code from infchg.appspot.com
-// 
+//                 ex. http://infchg.appspot.com/usr?at=1263939371
 int main(int argc, char *argv[])
 {
     int sockfd, portn, n;
@@ -27,9 +27,10 @@ int main(int argc, char *argv[])
 
     char buffer[256];
 	char buf[256]="GET / HTTP/1.0\r\n\r\n";  // "sss" for sending wrong method
-										      // GET / HTTP/1.0\r\n\r\n for index page
-    if (argc < 3) {
-       fprintf(stderr,"usage %s hostname port\n", argv[0]);
+				  // GET / HTTP/1.0\r\n\r\n for index page
+	char buf[256]="GET /usr?at=1263939371 HTTP/1.0\r\n\r\n"; 
+    if (0 && argc < 3) {
+       fprintf(stderr,"usage %s infchg.appspot.com beluga-graph\n", argv[0]);
        exit(0);
     }
     //portn = atoi(argv[2]);
