@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
     struct hostent *server;
 
     char buffer[256];
-	char buf[256]="GET / HTTP/1.0\r\n\r\n";  // "sss" for sending wrong method
+	//char buf[256]="GET / HTTP/1.0\r\n\r\n";  // "sss" for sending wrong method
 				  // GET / HTTP/1.0\r\n\r\n for index page
 	char buf[256]="GET /usr?at=1263939371 HTTP/1.0\r\n\r\n"; 
     if (0 && argc < 3) {
