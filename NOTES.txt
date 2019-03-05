@@ -1,0 +1,2 @@
+Since the Beluga service was moved to internal servers, the google cloud URLs used are no longer reacheable, 
+  backlog:  the urls will be updated with new servers apps on GC & AWS
