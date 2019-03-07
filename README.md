@@ -1,4 +1,4 @@
 c
-=
+## Lean-quality Dashboards tools
 
-c
+#   Open-Source parts available for Mission and Non-Profit use
