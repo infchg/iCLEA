@@ -1,7 +1,6 @@
 
 #!/bin/bash
-DOM=infchg.appspot.org
-#DOM=your domain
+DOM=${2:-infchg.appspot.org} #DOM=your domain
 
 if [ -z "${1}" ]
 then
@@ -28,8 +27,6 @@ DNS.2 = ${1}
 EOF
 #DNS.3 = ${2}
 
-openssl req -out ${1}.$DOM.csr -newkey rsa:2048 -nodes -keyout ${1}.$DOM.key -config ${1}.$DOM_cfg.txt
+openssl req -out ${1}.${DOM}.csr -newkey rsa:2048 -nodes -keyout ${1}.${DOM}.key -config ${1}.${DOM}_cfg.txt
 
-openssl req -noout -text -in ${1}.$DOM.csr
-
-
+openssl req -noout -text -in ${1}.${DOM}.csr
