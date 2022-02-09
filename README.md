@@ -92,7 +92,23 @@ or modify existing web app:
     "customDomains": [],
     "defaultHostname": "orange-water-019139410.1.azurestaticapps.net",
 
-    
+After this az command, 
+Azure will use the token to create pipeline actions in your repo. Beware sometimes azure leave two values empty and the action breaks, a solution is to edit your yaml action and fix this:
+	
+	      api_location: "api" # Api source code path - optional
+          output_location: "WebSite" # Built app content directory 
+
+ ![az-fixing-yml](az-fixing-yml.png) 
+
+Once fixed you see the website updated in azure:
+	
+	az staticwebapp environment show -n  App  --output table
+	
+BuildId   | CreatedTimeUtc              Hostname                                      LastUpdatedOn               Location    Name     ResourceGroup    SourceBranch    Status
+---------|  --------------------------  --------------------------------------------  --------------------------  ----------  -------  ---------------  --------------  ---------
+default   | 2022-02-09T01:08:43.394400  orange-water-019139410.1.azurestaticapps.net  2022-02-09T19:43:03.040164  Central US  default  web              master          Uploading
+
+
 
 ## Further Reading
 
