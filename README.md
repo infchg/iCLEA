@@ -20,6 +20,43 @@ az storage account create     -g web -n st1web -l 'Central US' # create StorageV
          "created": true
        }
 
+az storage blob upload-batch -s ./tmp/  -d \$web --account-name st1web  # for automation check --auth-mode   --sas-token   credentials.
+
+ 
+      Finished[#############################################################]  100.0000%
+      [
+        {
+          "Blob": "https://st1web.blob.core.windows.net/$web/index.html",
+          "Last Modified": "2022-02-09T13:35:47+00:00",
+          "Type": "text/html",
+          "eTag": "\"0x8D9EBD114461E8D\""
+        }
+      ]
+
+az storage account show -n st1web -g web --query "primaryEndpoints.web" --output tsv
+
+      https://st1web.z19.web.core.windows.net/   # before setup should give ErrorCode: WebsiteDisabled
+
+
+To Configure it 
+
+      az storage blob service-properties update --account-name st1web  --static-website --index-document index.html  #optional --404-document error.html 
+
+And we have a basic wen, could setup CORS and logging later
+
+This can be sync on github:
+
+    az staticwebapp create     --name app2     --resource-group web     --source https://github.com/infchg/AzCtrl     --location "eastus2"     --login-with-github
+    #    --branch main     --app-location "src" 
+
+
+## Further Reading
+
+
+- Microsoft, (2022), Troubleshooting & Limitations of Azure Cloud Shell, AzureAD.Standard.Preview, https://docs.microsoft.com/en-us/azure/cloud-shell/troubleshooting
+- Microsoft, (2021), Quickstart: Building your first static site using the Azure CLI https://docs.microsoft.com/en-us/azure/static-web-apps/get-started-cli?tabs=vanilla-javascript
+- Marcello Marrocos (2020) Static WebSite on Azure Storage Account https://medium.com/devops-cloud-it-career/static-website-on-azure-storage-account-17887938debb who also mentioned Github acquisition by Ms in 2018
+
 
 ## Control Dashboards
 
