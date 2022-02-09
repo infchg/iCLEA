@@ -22,11 +22,14 @@ We check from powershell inside azure:
       
 Test-Connection -ComputerName 10.1.0.4 -Count 3| Select-Object -Property Source  # (10.244.51.183)
 
-Source
-------
-cc-c735a499-545db545c8-p64w9
+Source|
+------|
+cc-c735a499-545db545c8-p64w9|
 
+ 
+## App py
 
+https://portal.azure.com and by choosing “Web Apps” -> “Create app service” 
 
 ## Az-cli
 
