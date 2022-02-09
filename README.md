@@ -7,6 +7,7 @@ As a parallel task to control several AD FS and AD DS in Azure, we will start wi
 Example of commands (notes from the presentation and dissemination labs to be compiled here soon)
 
 az storage account create     -g web -n st1web -l 'Central US' # create StorageV2
+
       {
         "accessTier": "Hot",
         "allowBlobPublicAccess": true,
