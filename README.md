@@ -73,9 +73,9 @@ To Configure it
 
 And we have a basic wen, could setup CORS and logging later
 
-##@ Or sync on github AzDevOps ...:
+### Or sync on github AzDevOps ...:
 
-could start new one
+could start new one:
 
     az staticwebapp create     --name app2     --resource-group web     --source https://github.com/infchg/AzCtrl     --location "eastus2"     --login-with-github
     #    --branch main     --app-location "src" 
