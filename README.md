@@ -82,8 +82,17 @@ could start new one
 
 or modify existing web app:
 
-  az staticwebapp reconnect -n app --source  https://github.com/infchg/AzCtrl   -b master --token    GithubRepoAccessToken
+     az staticwebapp update -n app --source  https://github.com/infchg/AzCtrl   -b master --token    GithubRepoAccessToken
+    az staticwebapp update -n app -s https://github.com/infchg/AzCtrl -b master --tags "py=3.8 api=7" -t GithubRepoAccessToken
+     {
+    "allowConfigFileUpdates": true,
+    "branch": "master",
+    "buildProperties": null,
+    "contentDistributionEndpoint": "https://content-dm1.infrastructure.1.azurestaticapps.net",
+    "customDomains": [],
+    "defaultHostname": "orange-water-019139410.1.azurestaticapps.net",
 
+    
 
 ## Further Reading
 
