@@ -1,6 +1,32 @@
 # AzCtrl AZURE CLOUD CONTROL DEMOS
 
-As a parallel task to control several AD FS and AD DS in Azure, we will start with a simple app we are going to control:
+We review tools to control several AD FS and AD DS in Azure,As a parallel task to
+
+This page has temporary notes shared during presentation and workships, covering As a parallel task:
+
+- Az AD DS setup and connectivity
+- Oath OIDS SAML
+- automate with Az cli, for demo we start with a simple app we are going to control:
+- automate with az cmdlet powershell
+
+## Az-AD-DS
+
+In Azure portal, chose Azure Active Directory and go to App registrations :
+
+  - get Client ID. 
+  - To get Client secret to go to Certificates & secrets - generate new  
+
+We check from powershell inside azure:
+
+      Test-Connection -ComputerName 10.1.0.4 -Count 3
+      
+Test-Connection -ComputerName 10.1.0.4 -Count 3| Select-Object -Property Source  # (10.244.51.183)
+
+Source
+------
+cc-c735a499-545db545c8-p64w9
+
+
 
 ## Az-cli
 
