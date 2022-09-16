@@ -1,8 +1,11 @@
-# Creating iCLEA repository of Cloud Eassy Appliances
+# Creating iCLEA repository of Cloud Easy Appliances
 
-in line with the furtniture & home model, the iCLEA templates are ready to be deployed and build new Clouds quickly and cost effectvely.
+As in the furniture home model: iCLEA templates ready to deploy and build new Clouds quickly and cost effectively. 
 
-Here now business can pickup appliances for AWS, Azure, GCP, ...
+
+Here business can pickup appliances for AWS, Azure, GCP, ... 
+ - 2022 Sept 17 uploading new Azure & AWS demo templates
+ - tf
 
 ## AzCtrl AZURE CLOUD CONTROL DEMOS
 
