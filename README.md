@@ -1,4 +1,10 @@
-# AzCtrl AZURE CLOUD CONTROL DEMOS
+# Creating iCLEA repository of Cloud Eassy Appliances
+
+in line with the furtniture & home model, the iCLEA templates are ready to be deployed and build new Clouds quickly and cost effectvely.
+
+Here now business can pickup appliances for AWS, Azure, GCP, ...
+
+## AzCtrl AZURE CLOUD CONTROL DEMOS
 
 We review tools to control several AD FS and AD DS in Azure,As a parallel task to
 
