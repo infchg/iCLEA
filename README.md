@@ -5,7 +5,7 @@ As in the furniture home model: iCLEA templates ready to deploy and build new Cl
 
 Here business can pickup appliances for AWS, Azure, GCP, ... 
  - 2022 Sept 17 uploading new Azure & AWS demo templates
- - tf
+ - tf & yaml Cloud Easy Appliances ready to deploy & build, time & cost effectively as in the  home furniture model. 
 
 ## AzCtrl AZURE CLOUD CONTROL DEMOS
 
