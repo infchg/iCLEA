@@ -1,0 +1,26 @@
+version: 0.2
+env:
+  variables:
+    INPUT_FILE: "serverless.yml"
+    JC: "buildspec.yaml  AWS SAM  "
+    S3_BUCKET: ""
+phases:
+  pre_build:
+   commands:
+       - echo "hi JC"
+       - mkdir -p ./JC/
+  install:
+    runtime-versions:
+      nodejs: 10
+    commands:
+      - echo npm install
+  build:
+    commands:
+      - ls -l |tee post1
+      - touch post-saml.yaml
+      #- aws cloudformation package --template $INPUT_FILE --s3-bucket $S3_BUCKET --output-template post-saml.yaml
+artifacts:
+    files:
+        - post-saml.yaml
+        #- beta.json
+        
