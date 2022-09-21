@@ -1,7 +1,7 @@
 version: 0.2
 env:
   variables:
-    INPUT_FILE: "serverless.yml"
+    INPUT_FILE: "NOTES.txt"
     JC: "buildspec.yaml  AWS SAM  "
     S3_BUCKET: ""
 phases:
@@ -10,8 +10,8 @@ phases:
        - echo "hi JC"
        - mkdir -p ./JC/
   install:
-    runtime-versions:
-      nodejs: 10
+    #runtime-versions:
+      #nodejs: 16 #This build image has the following versions: 16
     commands:
       - echo npm install
   build:
