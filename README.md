@@ -7,6 +7,30 @@ Here business can pickup appliances for AWS, Azure, GCP, ...
  - 2022 Sept 17 uploading new Azure & AWS demo templates
  - tf & yaml Cloud Easy Appliances ready to deploy & build, time & cost effectively as in the  home furniture model. 
 
+
+## OVERALL AGILE PERSPECTIVE
+
+
+```mermaid 
+stateDiagram-v2     
+  ModernAgile --> Meassure\nGaps❌🌡
+  Meassure\nGaps❌🌡 --> Transparent\nSafe🌐infos
+  Transparent\nSafe🌐infos --> Engage\nPeople💡✋
+  Engage\nPeople💡✋ --> Serve✅🍀\nAdd_Value
+ 
+CLIENT_VIEW --> SelfAssessment❌  
+SelfAssessment❌  --> SelectTemplatePrice🌐
+ 
+SelectTemplatePrice🌐 --> SignSLA✋
+SignSLA✋ --> AccessDEV🍀✅
+ 
+Provider_VIEW --> showAssessGuide  showAssessGuide --> providePrice+Templates  providePrice+Templates --> RISK_EARLYrunTemplate
+SelectTemplatePrice🌐 --> RISK_EARLYrunTemplate
+RISK_EARLYrunTemplate --> setCostRecover+DNS 
+SignSLA✋  --> setCostRecover+DNS 
+ #SignSLA✋ --> CDT_setDNS
+```
+
 ## AzCtrl AZURE CLOUD CONTROL DEMOS
 
 We review tools to control several AD FS and AD DS in Azure,As a parallel task to
